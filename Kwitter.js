@@ -1,9 +1,6 @@
 function addUser()
 {
-    user_name=document.getElementById("username").value;
-    firebase.database().ref("/").child(user_name).update({
-        purpose:"adding user"
-    });
-    localStorage.setItem("username",user_name);
-    window.location="Kwitter_room.html";
+    username=document.getElementById("username").value;
+    localStorage.setItem("username",username);
+    window.location="kwitter_room.html";
 }
